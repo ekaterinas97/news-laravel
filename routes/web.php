@@ -20,7 +20,7 @@ use App\Http\Controllers\WelcomePageController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/info', [WelcomePageController::class, 'index'])->name('info');
 
